@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>HTML FORM</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Gabrielle-Ann Herman">
+	<meta name="keywords" content="html, html5, assignment 3, homework">
+	<meta name="description" content="This is my submission for Internet Applications assignment 3.">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<main id="main" class="main">
+		<h1>Fill Out This Form</h1>
+		<p>Fill out this form for your chance to win the right for us to sell your information!</p>
+		<section id="form-wrapper" class="form-wrapper">
+			<h2>Account Info: </h2>
+			<form action="somepage.php" method="get">
+				<div id="fname-container" class="form-element">
+					<label for="firstname">First Name:</label>
+					<input type="text" name="FirstName" id="firstname" placeholder="First name" required> 
+				</div>
+				<div id="lname-container" class="form-element">
+					<label for="lastname">Last Name:</label>
+					<input type="text" name="LastName" id="lastname" placeholder="Last name" required>
+				</div>
+				<div id="email-container" class="form-element">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" placeholder="example@email.com" required>
+				</div>
+				<div id="password-container" class="form-element">
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" required>
+				</div>
+				<div id="date-container" class="form-element">
+					<label for="dte">Date of Birth:</label>
+					<input type="date" name="dte" id="dte" required>
+				</div>
+				<div id="phone-container" class="form-element">
+					<label for="number" >Cell Number:</label>
+					<input type="number" name="number" id="number" placeholder="555 555 555" required>
+				</div>
+				<div id="address-container" class="form-element">
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address" placeholder="22 House St." required>
+				</div>
+				<div id="city-container" class="form-element">
+				<label for="city">City: </label>
+				<input type="text" name="city" id="city" placeholder="City">
+				</div>
+				<div id="province-container" class="form-element">
+				<label for="province">Province or Territory: </label>
+					<select name="province" id="province">
+						<option id="alberta">Alberta</option>
+						<option id="british-columbia">British Columbia</option>
+						<option id="manitoba">Manitoba</option>
+						<option id="new-brunswick">New Brunswick</option>
+						<option id="newfoundland-labrador">Newfoundland and Labrador</option>
+						<option id="northwest-territories">Northwest Territories</option>
+						<option id="nova-scotia">Nova Scotia</option>
+						<option id="nunavut">Nunavut</option>
+						<option id="ontario">Ontario</option>
+						<option id="prince-edward-island">Prince Edward Island</option>
+						<option id="quebec">Quebec</option>
+						<option id="saskatchewan">Saskatchewan</option>
+						<option id="yukon">Yukon</option>
+					</select>
+				</div>
+				<div id="country-container" class="form-element">
+					<label for="country">Country: </label>
+					<select name="country" id="country">
+						<option id="canada">Canada</option>
+						<option id="not-canada">Outside Canada</option>
+					</select>
+				</div>
+				<div id="postal-container" class="form-element">
+					<label for="postal-code">Postal Code:</label>
+					<input type="text" name="postal-code" id="postal-code" placeholder="X1X-1X1">
+				</div>
+				<div id="gender-container" class="form-element">
+					<p>What is your Gender?</p>
+					<label for="woman">
+					<input type="radio" name="gender" id="woman" value="yes" checked>
+					Woman
+					</label>
+					<label for="man">
+					<input type="radio" name="gender" id="man" value="yes">
+					Man
+					</label>
+					<label for="other">
+					<input type="radio" name="gender" id="other" value="yes">
+					Other
+					</label>
+				</div>
+				<div id="Intro-container" class="form-element">
+					<label for="intro">Tell us about yourself:</label>
+					<textarea name="intro" id="intro" placeholder="ex. how many snakes do you buy per month?"></textarea>
+				</div>
+				<fieldset>
+					<legend>Select your hobbies: </legend>
+					<div id="hobby-container" class="form-element">
+						<label for="tapestry-weaving">Tapestry Weaving: </label>
+						<input type="checkbox" name="tapestry-weaving" id="tapestry-weaving" value="tapestry-weaving">
+						<br>
+						<label for="lasso-throwing">Lasso Throwing: </label>
+						<input type="checkbox" name="lasso-throwing" id="lasso-throwing" value="lasso-throwing">
+						<br>
+						<label for="chicken-wrangling">Chicken Wrangling: </label>
+						<input type="checkbox" name="chicken-wrangling" id="chicken-wrangling" value="chicken-wrangling">
+						<br>
+						<label for="emotions">Crying in front of the Mirror: </label>
+						<input type="checkbox" name="emotions" id="emotions" value="emotions">
+						<br>
+						<label for="rcplanes">Crashing RC Planes: </label>
+						<input type="checkbox" name="rcplanes" id="rcplanes" value="rcplanes">
+					</div>
+				</fieldset>
+				<div id="website-container" class="form-element">
+					<label for="website">Website: </label>
+					<input type="url" name="website" id="website" placeholder="http://www.website.com">
+				</div>
+				<button type="submit">Submit</button>
+				<button type="reset">Restart</button>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
