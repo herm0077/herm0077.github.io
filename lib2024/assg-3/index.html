@@ -6,7 +6,6 @@
 	<meta name="author" content="Gabrielle-Ann Herman">
 	<meta name="keywords" content="html, html5, assignment 3, homework">
 	<meta name="description" content="This is my submission for Internet Applications assignment 3.">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<main id="main" class="main">
@@ -14,6 +13,7 @@
 		<p>Please Log in and fill out your information to redeem.</p>
 		<section id="form-wrapper" class="form-wrapper">
 			<form action="somepage.php" method="get">
+				<!--First section-->
 			<h3>Login: </h3>
 			<div id="email-container" class="form-element">
 					<label for="email">Email:</label>
@@ -27,6 +27,7 @@
 					<label for="website">Website: </label>
 					<input type="url" name="website" id="website" placeholder="http://www.website.com">
 				</div><br>
+				<!--Second section-->
 				<h3><s>Billing</s> Shipping Address: </h3>
 				<div id="fname-container" class="form-element">
 					<label for="firstname">First Name:</label>
@@ -81,11 +82,8 @@
 						<option id="not-canada">Outside Canada</option>
 					</select>
 				</div><br>
-				<h3>More Info:</h3>
-				<div id="Intro-container" class="form-element">
-					<label for="intro">Tell us about yourself:</label>
-					<textarea name="intro" id="intro" placeholder="Why do you deserve this car?"></textarea>
-				</div><br>
+				<!--Third section-->
+				<h3>About You: </h3>
 				<div id="gender-container" class="form-element">
 					<p>What is your Gender?</p>
 					<label for="woman">
@@ -118,6 +116,11 @@
 						<br>
 					</div>
 				</fieldset><br>
+				<div id="Intro-container" class="form-element">
+					<label for="intro">Tell us about yourself:</label>
+					<textarea name="intro" id="intro" placeholder="Why do you deserve this car?"></textarea>
+				</div><br>
+				<!--Buttons-->
 				<button type="submit">Submit</button>
 				<button type="reset">Restart</button>
 			</form>
