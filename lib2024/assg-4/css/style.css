@@ -78,7 +78,7 @@ header {
 
 #title {
 	float: left;
-	width: calc(100%-120px);
+	width: calc(100%-135px);
 	margin:45px;
 	box-sizing:border-box;
 	font-size: 36px;
@@ -99,6 +99,7 @@ header {
 main {
 	width: 100%;
 	background-image: url("../img/webb.png");
+	box-sizing:border-box;
 }
 
 #main-art {
@@ -113,8 +114,7 @@ main {
 	padding:12px;
 }
 
-#main-text, 
-#sidebar-text {
+.text {
 	font-size:17px;
 	padding:10px;
 }
@@ -126,18 +126,22 @@ main {
 	box-sizing:border-box;
 }
 
+.add-title {
+	font-size:22px;
+	box-sizing:border-box;
+}
 
 #gallery {
 	width:100%;
 	box-sizing:border-box;
 }
 
-#gallery-title {
-	font-size:22px;
-	margin:25px;
-}
+#img-1,
+#img-2,
+#img-3
 
-#img-1 {
+
+ {
 	float: left;
 	width:190px;
 	margin:45px;
