@@ -9,28 +9,42 @@
 	<title>Mock Up</title>
 </head>
 <body>
-	<header id="header-content" class="header">
-		<div id="logo">
-			<img src="img/logo.png" alt="Cat logo">
-		</div>
-		<h1>Title of Page</h1>
-		<div id="navlist" class="clearfix">
+	<header id="header" class="clearfix">
+		<section class="page">
+			<div id="logo">
+				<img src="img/logo.png" alt="Cat logo">
+			</div>
+			<div id="title">
+				<h1>Title of Page</h1>
+			</div>
 			<nav>
-				<ul class="navlist">
-					<li><a href="www.algonquincollege.ca/">Home</a></li>
-					<li><a href="www.algonquincollege.ca/about">About</a></li>
-					<li><a href="www.algonquincollege.ca/contact">Contact</a></li>
-					<li><a href="www.algonquincollege.ca/jobs">Work</a></li>
+				<ul class="navlist clearfix">
+					<div id="home" class="clearfix">
+						<li><a href="www.algonquincollege.ca/">Home</a></li>
+					</div>
+					<div id="about" class="clearfix">
+						<li><a href="www.algonquincollege.ca/about">About</a></li>
+					</div>
+					<div id="contact" class="clearfix">
+						<li><a href="www.algonquincollege.ca/contact">Contact</a></li>
+					</div>
+					<div id="work" class="clearfix">
+						<li><a href="www.algonquincollege.ca/jobs">Work</a></li>
+					</div>
 				</ul>
 			</nav>
-		</div>
+	</section>
 	</header>
 	<main>
-		<section id="main">
+		<section id="main" class="page">
 			<article id="main-art" class="clearfix">
-				<h2>Main Content Title</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tincidunt fermentum. Cras efficitur dignissim nisl ut suscipit. Aenean sit amet condimentum velit. Sed lobortis ultrices lacus, ac blandit lectus. Curabitur sed semper tellus. Maecenas ac orci id erat lobortis pulvinar. Proin varius pharetra sapien sed bibendum. Sed sit amet nisi imperdiet, faucibus dui non, feugiat lectus. Quisque ornare in ex non convallis.</p>
-				<p>Proin vel condimentum sapien. Cras commodo quis arcu eu condimentum. Praesent gravida vulputate gravida. Ut sit amet est eu justo ultricies aliquet. Aliquam erat volutpat. Donec lobortis dui mi, non ullamcorper lorem varius ut. Cras metus sapien, finibus nec faucibus in, blandit sit amet urna. Curabitur egestas condimentum lectus id facilisis. Mauris auctor vulputate metus, vel dapibus lectus rhoncus sit amet. Proin ultrices nibh interdum porta suscipit. Nulla neque turpis, facilisis a consequat at, cursus eget enim. Nulla lobortis, ipsum ac sodales egestas, lorem mi vulputate felis, eget tincidunt dui nisl bibendum enim.</p>
+				<div id="main-title">
+					<h2>Main Content Title</h2>
+				</div>
+				<div id="main-text">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tincidunt fermentum. Cras efficitur dignissim nisl ut suscipit. Aenean sit amet condimentum velit. Sed lobortis ultrices lacus, ac blandit lectus. Curabitur sed semper tellus. Maecenas ac orci id erat lobortis pulvinar. Proin varius pharetra sapien sed bibendum. Sed sit amet nisi imperdiet, faucibus dui non, feugiat lectus. Quisque ornare in ex non convallis.</p>
+					<p>Proin vel condimentum sapien. Cras commodo quis arcu eu condimentum. Praesent gravida vulputate gravida. Ut sit amet est eu justo ultricies aliquet. Aliquam erat volutpat. Donec lobortis dui mi, non ullamcorper lorem varius ut. Cras metus sapien, finibus nec faucibus in, blandit sit amet urna. Curabitur egestas condimentum lectus id facilisis. Mauris auctor vulputate metus, vel dapibus lectus rhoncus sit amet. Proin ultrices nibh interdum porta suscipit. Nulla neque turpis, facilisis a consequat at, cursus eget enim. Nulla lobortis, ipsum ac sodales egestas, lorem mi vulputate felis, eget tincidunt dui nisl bibendum enim.</p>
+				</div>
 			</article>
 			<aside id="sidebar" class="clearfix">
 				<img src="img/logo.png" alt="picture of cat">
@@ -38,7 +52,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tincidunt fermentum. Cras efficitur dignissim nisl ut suscipit. Aenean sit amet condimentum velit. Sed lobortis ultrices lacus, ac blandit lectus. Curabitur sed semper tellus. Maecenas ac orci id erat lobortis pulvinar. Proin varius pharetra sapien sed bibendum. Sed sit amet nisi imperdiet, faucibus dui non, feugiat lectus. Quisque ornare in ex non convallis.</p>
 			</aside>
 		</section>
-		<section id="gallery">
+		<section id="gallery" class="page">
 			<h3>Secondary Content title</h3>
 			<figure id="image-1">
 				<img src="img/logo.png" alt="image">
@@ -54,15 +68,17 @@
 			</figure>
 		</section>
 	</main>
-	<footer id="footer-content" class="footer">
-		<p>Copyright 2020. dont steal uwu.</p>
-		<div id="footerlist" class="navlist">
-			<ul>
-				<li><img src="img/facebook.png" alt="facebook logo"></li>
-				<li><img src="img/youtube.png" alt="youtube logo"></li>
-				<li><img src="img/twitter.png" alt="twitter logo"></li>
-			</ul>
-		</div>
+	<footer id="footer" class="clearfix">
+		<section class="page"
+			<p>Copyright 2020. dont steal uwu.</p>
+			<div id="footerlist">
+				<ul class="clearfix">
+					<li><img src="img/facebook.png" alt="facebook logo"></li>
+					<li><img src="img/youtube.png" alt="youtube logo"></li>
+					<li><img src="img/twitter.png" alt="twitter logo"></li>
+				</ul>
+			</div>
+	</section>
 	</footer>
 </body>
 </html>

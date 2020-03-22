@@ -1,7 +1,10 @@
+@charset "utf-8";
+
 /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,6 +25,29 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /*CSS clearfix*/
 .clearfix:after {
@@ -30,37 +56,95 @@ time, mark, audio, video {
 	clear: both;
 }
 
-@charset "utf-8";
+/*Page constraints*/
+.page {
+	max-width:960px;
+	margin:auto;
+}
 
-
-/*box models*/
-.header {
+/*Header*/
+header {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: #7cc576;
 }
 
-.h1 {
-	border-top-left-radius: 50%
-	font-size: 100%
+#logo {
+	float: left;
+	width: 120px;
+	padding:15px;
 	box-sizing: border-box;
 }
 
+#title {
+	float: left;
+	width: calc(100%-120px);
+	margin:45px;
+	box-sizing:border-box;
+	font-size: 36px;
+} 
+
+#home,
+#about,
+#contact,
+#work {
+	float:left;
+	padding:25px;
+	margin:30px;
+	background-color: #6dcff6;
+	box-sizing:border-box;
+}
+
+/*Main Content*/
 main {
 	width: 100%;
 	background-image: url("../img/webb.png");
 }
 
 #main-art {
+	float:left;
 	box-sizing: border-box;
 	max-width:65%;
+	padding:25px;
+}
 
+#main-title {
+	font-size:22px;
+	padding:12px;
+}
+
+#main-text, 
+#sidebar-text {
+	font-size:17px;
+	padding:10px;
 }
 
 #sidebar {
+	float:left;
 	max-width:35%;
+	padding:25px;
+	box-sizing:border-box;
 }
 
+
+#gallery {
+	width:100%;
+	box-sizing:border-box;
+}
+
+#gallery-title {
+	font-size:22px;
+	margin:25px;
+}
+
+#img-1 {
+	float: left;
+	width:190px;
+	margin:45px;
+	box-sizing:border-box;
+}
+
+/*Footer*/
 .footer {
 	width: 100%;
 	box-sizing: border-box;
