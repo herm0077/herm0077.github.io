@@ -6,7 +6,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -66,6 +66,7 @@ table {
 header {
 	width: 100%;
 	box-sizing: border-box;
+	position:relative;
 	background-color: #7cc576;
 }
 
@@ -73,26 +74,43 @@ header {
 	float: left;
 	width: 120px;
 	padding:15px;
+	position:absolute;
 	box-sizing: border-box;
 }
 
 #title {
 	float: left;
-	width: calc(100%-135px);
-	margin:45px;
-	box-sizing:border-box;
-	font-size: 36px;
+	width:825px;
+	margin-left:240px;
+	position:relative;
+	box-sizing: border-box;
+	font-family:arial;
+	font-size:35px;
 } 
+
+.navlist {
+	width:100%;
+	position:relative;
+	box-sizing:border-box;
+}
 
 #home,
 #about,
 #contact,
 #work {
 	float:left;
-	padding:25px;
-	margin:30px;
+	max-width:240px;
+	padding-bottom:32px;
+	padding-top:32px;
+	padding-left:70px;
+	padding-right:70px;
+	margin:25px;
 	background-color: #6dcff6;
 	box-sizing:border-box;
+	position:relative;
+	border-radius:15px;
+	font-family:arial;
+	text-align: center;
 }
 
 /*Main Content*/
@@ -102,14 +120,15 @@ main {
 	box-sizing:border-box;
 }
 
-#main-art {
+article {
 	float:left;
 	box-sizing: border-box;
 	max-width:65%;
 	padding:25px;
+	font-family:arial;
 }
 
-#main-title {
+.main-title {
 	font-size:22px;
 	padding:12px;
 }
@@ -119,39 +138,57 @@ main {
 	padding:10px;
 }
 
-#sidebar {
+aside {
 	float:left;
 	max-width:35%;
 	padding:25px;
 	box-sizing:border-box;
-}
-
-.add-title {
-	font-size:22px;
-	box-sizing:border-box;
+	font-family:arial;
 }
 
 #gallery {
-	width:100%;
+	width:960px;
 	box-sizing:border-box;
+	font-family:arial;
+}
+
+#gal-title {
+	margin-left:25px;
+	padding:10px;
 }
 
 #img-1,
 #img-2,
-#img-3
-
-
- {
+#img-3 {
 	float: left;
+	max-width:960px;
 	width:190px;
-	margin:45px;
+	margin-bottom:25px;
+	margin-left: 65px;
+	margin-right:65px;
 	box-sizing:border-box;
+	text-align:center;
 }
 
 /*Footer*/
-.footer {
+footer {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: #7cc576;
+	font-family:arial;
 }
 
+.copyright {
+	float:left;
+	padding:30px;
+	box-sizing:border-box;
+}
+
+#facebook, 
+#youtube,
+#twitter {
+	float:right;
+	margin:15px;
+	box-sizing:border-box;
+	position:relative;
+}
