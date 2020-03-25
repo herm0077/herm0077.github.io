@@ -88,8 +88,10 @@ header {
 	font-size:35px;
 } 
 
-.navlist {
+nav ul {
+	max-width:960px;
 	width:100%;
+	margin-left:30px;
 	position:relative;
 	box-sizing:border-box;
 }
@@ -99,12 +101,9 @@ header {
 #contact,
 #work {
 	float:left;
-	max-width:240px;
-	padding-bottom:32px;
-	padding-top:32px;
-	padding-left:70px;
-	padding-right:70px;
-	margin:25px;
+	max-width:25%;
+	padding:30px;
+	margin:30px;
 	background-color: #6dcff6;
 	box-sizing:border-box;
 	position:relative;
