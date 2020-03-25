@@ -72,7 +72,7 @@ header {
 
 #logo {
 	float: left;
-	width: 120px;
+	width: 12%;
 	padding:15px;
 	position:absolute;
 	box-sizing: border-box;
@@ -80,7 +80,7 @@ header {
 
 #title {
 	float: left;
-	width:825px;
+	width:88%;
 	margin-left:240px;
 	position:relative;
 	box-sizing: border-box;
@@ -160,7 +160,7 @@ aside {
 #img-2,
 #img-3 {
 	float: left;
-	max-width:960px;
+	max-width:100%;
 	width:190px;
 	margin-bottom:25px;
 	margin-left: 65px;
