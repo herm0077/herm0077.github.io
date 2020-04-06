@@ -8,12 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>My Logo</title>
 </head>
-<body>
-	<header id="header">
-		<div id="logo" class="title">
+<body class="clearfix">
+	<header id="header" class="clearfix">
+		<div id="logo" class="title clearfix">
 			<h1>MY LOGO</h1>
 		</div>
-		<nav id="nav" class="navlist">
+		<nav id="nav" class="navlist clearfix">
 			<ul>
 				<li><a href="x">HOME</a></li>
 				<li><a href="x">ABOUT</a></li>
@@ -23,26 +23,28 @@
 			</ul>
 		</nav>
 	</header>
-	<main id="main" class="maincont">
+	<main id="main" class="maincont clearfix">
 		<!--About section -->
-		<section id="aboutsec" class="section">
-			<h2>ABOUT</h2>
-			<article id=about class="aboutart">
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consectetur sem. Aliquam mollis orci urna, ut semper est cursus sed. Praesent nibh orci, bibendum ac dui vel, tristique congue metus. Vestibulum viverra enim sit amet urna molestie, et consequat dolor viverra. Morbi commodo augue nec sapien tristique pulvinar. Cras venenatis sed orci id laoreet. Duis neque purus, imperdiet vel porta posuere, tristique in ligula. Nulla iaculis, nibh in gravida condimentum, mauris dui porttitor leo, et tempor urna lacus at elit. Nam quis rutrum nulla. Donec pharetra porta urna, a fringilla arcu elementum ut. Morbi pellentesque rutrum nunc, mollis vestibulum sapien. Fusce facilisis eu nisi et placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla mollis augue accumsan arcu blandit, vitae gravida lectus semper. Cras at magna faucibus, ornare purus eu, mattis sem.<br>
+		<section id="aboutsec" class="section clearfix">
+			<div class="aboutart clearfix">
+				<h2>ABOUT</h2>
+				<article id=about class="clearfix">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consectetur sem. Aliquam mollis orci urna, ut semper est cursus sed. Praesent nibh orci, bibendum ac dui vel, tristique congue metus. Vestibulum viverra enim sit amet urna molestie, et consequat dolor viverra. Morbi commodo augue nec sapien tristique pulvinar. Cras venenatis sed orci id laoreet. Duis neque purus, imperdiet vel porta posuere, tristique in ligula. Nulla iaculis, nibh in gravida condimentum, mauris dui porttitor leo, et tempor urna lacus at elit. Nam quis rutrum nulla. Donec pharetra porta urna, a fringilla arcu elementum ut. Morbi pellentesque rutrum nunc, mollis vestibulum sapien. Fusce facilisis eu nisi et placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla mollis augue accumsan arcu blandit, vitae gravida lectus semper. Cras at magna faucibus, ornare purus eu, mattis sem.<br>
 
-				Vestibulum bibendum nisi in accumsan egestas. Vestibulum vitae semper sem, at suscipit metus. Curabitur convallis, odio quis imperdiet pharetra, ante tortor posuere orci, non ullamcorper ex lectus sed mi. Sed quis est sit amet eros dictum gravida sit amet et ex. Praesent sed tincidunt sem, at ornare lacus. Vivamus eleifend nisl at leo efficitur auctor. Vivamus turpis eros, ultricies a bibendum vel, pellentesque eget turpis. Donec quis tempus orci. Nunc ultrices in diam tempor ornare. Donec facilisis sit amet erat quis imperdiet. Proin sed dictum velit. Integer dignissim consequat efficitur. Suspendisse potenti. Morbi erat sem, fermentum vel sollicitudin laoreet, congue id diam. Mauris sit amet dapibus leo. Nunc faucibus sagittis lacinia. </p>
-			</article>
+					Vestibulum bibendum nisi in accumsan egestas. Vestibulum vitae semper sem, at suscipit metus. Curabitur convallis, odio quis imperdiet pharetra, ante tortor posuere orci, non ullamcorper ex lectus sed mi. Sed quis est sit amet eros dictum gravida sit amet et ex. Praesent sed tincidunt sem, at ornare lacus. Vivamus eleifend nisl at leo efficitur auctor. Vivamus turpis eros, ultricies a bibendum vel, pellentesque eget turpis. Donec quis tempus orci. Nunc ultrices in diam tempor ornare. Donec facilisis sit amet erat quis imperdiet. Proin sed dictum velit. Integer dignissim consequat efficitur. Suspendisse potenti. Morbi erat sem, fermentum vel sollicitudin laoreet, congue id diam. Mauris sit amet dapibus leo. Nunc faucibus sagittis lacinia. </p>
+				</article>
+			</div>
 			<!--Photo Aside -->
-			<aside id="sidephoto" class="aside">
+			<aside id="sidephoto" class="aside clearfix">
 				<div id="abtimage" class="image">
-					<img src="x" height="200" width="200">
+					<img src="img/desk.jpg" height="200" width="200">
 				</div>
 			</aside>
 		</section>
 		<!-- Schedule Section -->
-		<section id="schedulesec" class="section">
+		<section id="schedulesec" class="section clearfix">
 			<h2>SCHEDULE</h2>
-			<table id="schedule" class="table">
+			<table id="schedule" class="table clearfix">
 				<thead class="thead">
 					<tr>
 						<th>TIME</th>
@@ -90,10 +92,10 @@
 			</table>
 		</section>
 		<!--Profile Form-->
-		<section id="profilesec" class="section">
-			<article id="editprof" class="profile">
+		<section id="profilesec" class="section clearfix">
+			<article id="editprof" class="profile clearfix">
 				<h2>EDIT PROFILE</h2>
-				<form action="somepage.php" method="get">
+				<form action="somepage.php" method="get" id="form">
 					<div id="nameform" class="form">
 						<label for="name">Name</label>
 						<input type="text" name="name" id="name">
@@ -141,9 +143,9 @@
 				</form>
 			</article>
 			<!--Profile Display-->
-			<aside id="prof" class="profile">
+			<aside id="prof" class="profile clearfix">
 				<h2>PROFILE INFO</h2>
-            	<div id="mockprofile" class="profile">
+            	<div id="mockprofile" class="profile clearfix">
             		<img src="" height="200" width="200">
             		<h3 id="mockname">John Doe</h3>
             		<p id="mockemail">JohnDoe@algonquincollege.ca</p>
