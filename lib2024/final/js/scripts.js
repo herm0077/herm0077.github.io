@@ -1,30 +1,49 @@
 window.onload = init;
 
 function init() {
+	document.querySelector('.ham').onclick = showHideMobileMenu;
+
+	//HAMBURGER
+
+	function showHideMobileMenu() {
+		var mobileNav = document.querySelector('.m-nav');
+
+		if(mobileNav.style.display=="block") {
+			mobileNav.style.display="none";
+		} else {
+			mobileNav.style.display="block";
+		}
+	}
+
+	//SUBMIT LOADER
 
 	$('#form').submit(function (e) {
-   		 e.preventDefault();
-   		 $("#results").removeClass('reveal');
-   		 var form = this;
-   		 $(".overlay-container").fadeIn(1000, function(){
-   		 		showformValues(form);
-   		 		$('.overlay-container').delay(500).fadeOut(500);
-   		 		$("#results").addClass('reveal');
-   		 })
-	});
+	   		 e.preventDefault();
+	   		 var form = this;
+	   		 $(".overlay-cont").fadeIn(1000, function(){
+	   		 		showformValues(form);
+	   		 		$('.overlay-cont').delay(500).fadeOut(500);
+	   		 })
+		});
 
+	//MOCK PROFILE
+
+	function showformValues(form){
+		var formValues = $(form).serializeArray(); 
+			
+		$.each(formValues, function(index, field){
+
+			$("#mockprofile").find("#"+field.name+"_result").text(field.value);
+			$("#mockprofile").find("#"+name+"_result").text(field.value);
+
+			if(field.name=="email"){
+				$("#mockprofile").find("#"+email+"_result").attr("href", "mailto:"+field.value);
+			}
+			$("#mockprofile").find("#"+address+"_result").text(field.value);
+			$("#mockprofile").find("#"+city+"_result").text(field.value);
+			$("#mockprofile").find("#"+province+"_result").text(field.value);
+			$("#mockprofile").find("#"+postcode+"_result").text(field.value);
+
+		})				
+	}
 }
-
-function showformValues(form){
-	var formValues = $(form).serializeArray(); 
-		
-	$.each(formValues, function(index, field){
-
-		$("#results").find("#"+field.name+"_result").text(field.value);
-
-		if(field.name=="email"){
-			$("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
-		}
-	})				
-}
-

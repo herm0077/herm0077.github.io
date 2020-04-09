@@ -3,32 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Gabrielle-Ann Herman">
-	<meta name="keywords" content="final, html, assignment">
-	<meta name="description" content="This is my submission">
+	<meta name="keywords" content="final, html, css, javascript">
+	<meta name="description" content="This is my submission for the Internet Applications Final">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>My Logo</title>
 </head>
 <body class="clearfix">
+	<div class="overlay-cont">
+		<div class="swod"></div>
+	</div>
 	<header id="header" class="clearfix">
-		<div id="logo" class="title clearfix">
-			<h1>MY LOGO</h1>
+		<div class="logo clearfix">
+			<h1>PLANTS!</h1>
 		</div>
-		<nav id="nav" class="navlist clearfix">
-			<ul>
-				<li><a href="x">HOME</a></li>
-				<li><a href="x">ABOUT</a></li>
-				<li><a href="x">SCHEDULE</a></li>
-				<li><a href="x">PORTFOLIO</a></li>
-				<li><a href="x">CONTACT</a></li>
+		<!--Main Navigation -->
+		<nav class="d-nav navlist clearfix">
+			<ul class="d-nav clearfix">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">SCHEDULE</a></li>
+				<li><a href="#">PORTFOLIO</a></li>
+				<li><a href="#">CONTACT</a></li>
 			</ul>
 		</nav>
+		<!-- Mobile Navigation-->
+		<div class="ham"></div>
+		<div class="m-nav-cont clearfix">
+			<nav class="nav-cont m-nav">
+				<ul class="navlist">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">SCHEDULE</a></li>
+					<li><a href="#">PORTFOLIO</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<main id="main" class="maincont clearfix">
+	<main id="main" class="main-cont clearfix">
 		<!--About section -->
-		<section id="aboutsec" class="section clearfix">
-			<div class="aboutart clearfix">
-				<h2>ABOUT</h2>
-				<article id=about class="clearfix">
+		<section id="about-sec" class="section clearfix">
+			<div class="about-art clearfix">
+				<h2 class="title">ABOUT</h2>
+				<article class="about clearfix">
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consectetur sem. Aliquam mollis orci urna, ut semper est cursus sed. Praesent nibh orci, bibendum ac dui vel, tristique congue metus. Vestibulum viverra enim sit amet urna molestie, et consequat dolor viverra. Morbi commodo augue nec sapien tristique pulvinar. Cras venenatis sed orci id laoreet. Duis neque purus, imperdiet vel porta posuere, tristique in ligula. Nulla iaculis, nibh in gravida condimentum, mauris dui porttitor leo, et tempor urna lacus at elit. Nam quis rutrum nulla. Donec pharetra porta urna, a fringilla arcu elementum ut. Morbi pellentesque rutrum nunc, mollis vestibulum sapien. Fusce facilisis eu nisi et placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla mollis augue accumsan arcu blandit, vitae gravida lectus semper. Cras at magna faucibus, ornare purus eu, mattis sem.<br>
 
 					Vestibulum bibendum nisi in accumsan egestas. Vestibulum vitae semper sem, at suscipit metus. Curabitur convallis, odio quis imperdiet pharetra, ante tortor posuere orci, non ullamcorper ex lectus sed mi. Sed quis est sit amet eros dictum gravida sit amet et ex. Praesent sed tincidunt sem, at ornare lacus. Vivamus eleifend nisl at leo efficitur auctor. Vivamus turpis eros, ultricies a bibendum vel, pellentesque eget turpis. Donec quis tempus orci. Nunc ultrices in diam tempor ornare. Donec facilisis sit amet erat quis imperdiet. Proin sed dictum velit. Integer dignissim consequat efficitur. Suspendisse potenti. Morbi erat sem, fermentum vel sollicitudin laoreet, congue id diam. Mauris sit amet dapibus leo. Nunc faucibus sagittis lacinia. </p>
@@ -37,13 +56,13 @@
 			<!--Photo Aside -->
 			<aside id="sidephoto" class="aside clearfix">
 				<div id="abtimage" class="image">
-					<img src="img/desk.jpg" height="200" width="200">
+					<img src="img/desk.jpg" height="233" width="327">
 				</div>
 			</aside>
 		</section>
 		<!-- Schedule Section -->
 		<section id="schedulesec" class="section clearfix">
-			<h2>SCHEDULE</h2>
+			<h2 class="title">SCHEDULE</h2>
 			<table id="schedule" class="table clearfix">
 				<thead class="thead">
 					<tr>
@@ -93,26 +112,26 @@
 		</section>
 		<!--Profile Form-->
 		<section id="profilesec" class="section clearfix">
-			<article id="editprof" class="profile clearfix">
-				<h2>EDIT PROFILE</h2>
-				<form action="somepage.php" method="get" id="form">
-					<div id="nameform" class="form">
+			<article id="edit-prof" class="profile clearfix">
+				<h2 class="title">EDIT PROFILE</h2>
+				<form action="submit.php" method="post" id="form">
+					<div id="nameform" class="prof-form">
 						<label for="name">Name</label>
 						<input type="text" name="name" id="name">
 					</div>
-					<div id="emailform" class="form">
+					<div id="emailform" class="prof-form">
 						<label for="email">Email</label>
 						<input type="email" name="email" id="email">
 					</div>
-					<div id="addform" class="form">
+					<div id="addform" class="prof-form">
 						<label for="address">Address</label>
 						<input type="text" name="address" id="address">
 					</div>
-					<div id="cityform" class="form">
+					<div id="cityform" class="prof-form">
 						<label for="city">City</label>
 						<input type="text" name="city" id="city">
 					</div>
-					<div id="provform" class="form">
+					<div id="provform" class="prof-form">
 						<label for="province">Province</label>
 						<select name="province" id="province">
 							<optgroup label="Province">
@@ -133,9 +152,9 @@
 							</optgroup>
 						</select>
 					</div>
-					<div id="codeform" class="form">
+					<div id="codeform" class="prof-form">
 						<label for="postcode">Postal Code</label>
-						<input type="text" name="postcode" id="postcode">
+						<input type="text" name="postcode" id="postcode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="A0A 0A0">
 					</div>
 					<div id="submit" class="button">
 						<button type="submit">Submit</button>
@@ -144,44 +163,45 @@
 			</article>
 			<!--Profile Display-->
 			<aside id="prof" class="profile clearfix">
-				<h2>PROFILE INFO</h2>
+				<h2 class="title">PROFILE INFO</h2>
             	<div id="mockprofile" class="profile clearfix">
-            		<img src="" height="200" width="200">
-            		<h3 id="mockname">John Doe</h3>
-            		<p id="mockemail">JohnDoe@algonquincollege.ca</p>
-            		<p id="mockaddress">1385 Woodroffe Ave,</p>
-            		<p id="mockcity">Nepean,</p>
-            		<p id="mockprov">ON,</p>
-            		<p id="mockcode">K2G 1V8</p>
-            		<img src="" height="50" width="100">
+            		<img src="img/plant.png" height="200" width="100" id="prof-pic">
+            		<h3>Name: <span id="name-result"></span></h3>
+            		<p>Email: <span id="email-result"></span></p>
+            		<p>Address: <span id="address-result"></span></p>
+            		<p>City: <span id="city-result"></span></p>
+            		<p>Province: <span id="prov-result"></span></p>
+            		<p>Postal Code: <span id="code-result"></span></p>
+            		<img src="#" height="50" width="100">
             	</div>
 			</aside>
 		</section>
 	</main>
 	<!-- Footer Content -->
-	<footer id="fullfoot" class="footer">
-		<section id="quicklinks" class="navfooter">
-			<ul id="footerlinks" class="navlist">
+	<footer id="fullfoot" class="footer clearfix">
+		<section id="quicklinks" class="section nav-footer clearfix">
+			<ul id="footerlinks" class="nav-footer clearfix">
 				<li><a href="x">Schedule</a></li>
 				<li><a href="x">About</a></li>
 				<li><a href="x">Portfolio</a></li>
 				<li><a href="x">Contact</a></li>
 			</ul>
 		</section>
-		<section id="followus" class="navfooter">
-			<div id="social" class="navlist">
+		<section id="followus" class="section nav-footer clearfix">
+			<div id="social" class="nav-footer clearfix">
 				<ul>
-					<li><a href="x"><img src="x"></a>
-					<li><a href="x"><img src="x"></a>
-					<li><a href="x"><img src="x"></a>
+					<li><a href="#"><img src="x"></a>
+					<li><a href="#"><img src="x"></a>
+					<li><a href="#"><img src="x"></a>
 				</ul>
 			</div>
 		</section>
-		<section id="address" class="navfooter">
+		<section id="address" class="section nav-footer clearfix">
 			<p>1385 Woodroffe Ave. <br>
 				Nepean, ON K2G 1V8<br>
 			Canada</p>
 		</section>
 	</footer>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
