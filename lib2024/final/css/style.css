@@ -201,7 +201,7 @@ label {
 	font-family:bt2medium, sans-serif;
 }
 
-.title,
+h2,
 th {
 	color:#72a9ae;
 	text-align:center;
@@ -266,7 +266,7 @@ tr:nth-child(odd) {
 }
 
 /*ANIMATION*/
- /*
+ 
 .overlay-cont {
 
 			position: fixed;
@@ -332,7 +332,7 @@ tr:nth-child(odd) {
 				border-radius: 50%;
 			}
 		}
-*/
+
 
 /*DESKTOP*/
 
@@ -391,7 +391,7 @@ tr:nth-child(odd) {
 	}
 
 /*ABOUT*/
-h2 {
+.title, {
 	width:100%;
 	float:left;
 	box-sizing:border-box;
