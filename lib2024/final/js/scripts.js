@@ -34,16 +34,12 @@ function init() {
 		$.each(formValues, function(index, field){
 
 			$("#mockprofile").find("#"+field.name+"_result").text(field.value);
-			$("#mockprofile").find("#"+name+"_result").text(field.value);
 
 			if(field.name=="email"){
 				$("#mockprofile").find("#"+email+"_result").attr("href", "mailto:"+field.value);
 			}
 			$("#mockprofile").find("#"+address+"_result").text(field.value);
-			$("#mockprofile").find("#"+city+"_result").text(field.value);
-			$("#mockprofile").find("#"+province+"_result").text(field.value);
-			$("#mockprofile").find("#"+postcode+"_result").text(field.value);
-
+			
 		})				
 	}
 }
