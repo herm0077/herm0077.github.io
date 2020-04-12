@@ -33,7 +33,7 @@ function init() {
 			$("#mockprofile").find("#"+field.name+"_result").text(field.value);
 
 			if(field.name=="email"){
-				$("#mockprofile").find("#"+email+"_result").attr("href", "mailto:"+field.value);
+				$("#mockprofile").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
 			}
 
 		})				
