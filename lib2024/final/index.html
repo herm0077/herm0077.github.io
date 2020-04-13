@@ -49,7 +49,7 @@
 			<div class="about-art clearfix">
 				<h2 class="title">ABOUT</h2>
 				<article class="about clearfix">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consectetur sem. Aliquam mollis orci urna, ut semper est cursus sed. Praesent nibh orci, bibendum ac dui vel, tristique congue metus. Vestibulum viverra enim sit amet urna molestie, et consequat dolor viverra. Morbi commodo augue nec sapien tristique pulvinar. Cras venenatis sed orci id laoreet. Duis neque purus, imperdiet vel porta posuere, tristique in ligula. Nulla iaculis, nibh in gravida condimentum, mauris dui porttitor leo, et tempor urna lacus at elit. Nam quis rutrum nulla. Donec pharetra porta urna, a fringilla arcu elementum ut. Morbi pellentesque rutrum nunc, mollis vestibulum sapien. Fusce facilisis eu nisi et placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla mollis augue accumsan arcu blandit, vitae gravida lectus semper. Cras at magna faucibus, ornare purus eu, mattis sem.<br>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Monstera deiliciosa. Philadendron pink princess. Obliqua variegata. Dieffenbachia, hedera helix variegata. Albo borsigiana, aerial roots. Thai Constellation, echeveria lola. Haworthia, aloe maculata. Golden pothos, marble queen. variegated string of pearls, bee balm. Spider plant. Nam quis rutrum nulla. Donec pharetra porta urna, a fringilla arcu elementum ut. Morbi pellentesque rutrum nunc, mollis vestibulum sapien. Fusce facilisis eu nisi et placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla mollis augue accumsan arcu blandit, vitae gravida lectus semper. Cras at magna faucibus, ornare purus eu, mattis sem.<br>
 
 					Vestibulum bibendum nisi in accumsan egestas. Vestibulum vitae semper sem, at suscipit metus. Curabitur convallis, odio quis imperdiet pharetra, ante tortor posuere orci, non ullamcorper ex lectus sed mi. Sed quis est sit amet eros dictum gravida sit amet et ex. Praesent sed tincidunt sem, at ornare lacus. Vivamus eleifend nisl at leo efficitur auctor. Vivamus turpis eros, ultricies a bibendum vel, pellentesque eget turpis. Donec quis tempus orci. Nunc ultrices in diam tempor ornare. Donec facilisis sit amet erat quis imperdiet. </p>
 				</article>
@@ -114,23 +114,23 @@
 		<!--Profile Form-->
 		<section id="profilesec" class="section clearfix">
 			<article id="edit-prof" class="profile clearfix">
-				<h2 class="title">EDIT PROFILE</h2>
+				<h2>EDIT PROFILE</h2>
 				<form action="submit.php" method="post" id="form">
 					<div id="nameform" class="prof-form">
 						<label for="name">Name</label>
-						<input type="text" name="name" id="name">
+						<input type="text" name="name" id="name" required>
 					</div>
 					<div id="emailform" class="prof-form">
 						<label for="email">Email</label>
-						<input type="email" name="email" id="email">
+						<input type="email" name="email" id="email" required>
 					</div>
 					<div id="addform" class="prof-form">
 						<label for="address">Address</label>
-						<input type="text" name="address" id="address">
+						<input type="text" name="address" id="address" required>
 					</div>
 					<div id="cityform" class="prof-form">
 						<label for="city">City</label>
-						<input type="text" name="city" id="city">
+						<input type="text" name="city" id="city" required>
 					</div>
 					<div id="provform" class="prof-form">
 						<label for="province">Province</label>
@@ -155,7 +155,7 @@
 					</div>
 					<div id="codeform" class="prof-form">
 						<label for="postcode">Postal Code</label>
-						<input type="text" name="postcode" id="postcode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="A0A 0A0">
+						<input type="text" name="postcode" id="postcode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="A0A 0A0" required>
 					</div>
 					<div id="submit" class="button">
 						<button type="submit">Submit</button>
@@ -164,17 +164,17 @@
 			</article>
 			<!--Profile Display-->
 			<aside id="prof" class="profile clearfix">
-				<h2 class="title">PROFILE INFO</h2>
             	<div id="mockprofile" class="profile clearfix">
+            		<h2>PROFILE INFO</h2>
             		<div id="profilepic">
             			<img src="img/plant.png" alt="Monstera Thai Constellation">
             		</div>
             		<p id="user-icon"><i class="far fa-user-circle"></i> <span id="name_result"></span></p>
-            		<p>Email: <span id="email_result"></span></p>
-            		<p>Address: <span id="address_result"></span></p>
-            		<p>City: <span id="city_result"></span></p>
-            		<p>Province: <span id="province_result"></span></p>
-            		<p>Postal Code: <span id="postcode_result"></span></p>
+            		<p><a href="#" id="email_result"></a></p>
+            		<p><span id="address_result"></span></p>
+            		<p><span id="city_result"></span></p>
+            		<p><span id="province_result"></span></p>
+            		<p><span id="postcode_result"></span></p>
             		<p><i class="far fa-envelope"></i></p>
             	</div>
 			</aside>
