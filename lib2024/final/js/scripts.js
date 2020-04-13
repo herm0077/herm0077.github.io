@@ -21,7 +21,7 @@ function init() {
    		 $(".overlay-cont").fadeIn(1000, function(){
    		 		showformValues(form);
    		 		$('.overlay-cont').delay(500).fadeOut(500);
-   		 })
+   		 });
 	});
 
 	//MOCK PROFILE
@@ -36,6 +36,6 @@ function init() {
 				$("#mockprofile").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
 			}
 
-		})				
+		});				
 	}
 }
